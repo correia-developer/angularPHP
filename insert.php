@@ -45,13 +45,13 @@
 		if (mysqli_query($con, $sql)) {
 
 			$status_code = http_response_code(201);
-			$message ="Contact successfully added";
+			$message ="Student successfully added";
 			$response ="OK";
 
 		} else {
 
 			$status_code = http_response_code(422);
-			$message ="contact not successfully added";
+			$message ="Student not successfully added";
 			$response ="OK";
 		}
 
